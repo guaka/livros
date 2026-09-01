@@ -1,0 +1,8 @@
+{
+  "name": "livros-livres-portugueses",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  }
+}
