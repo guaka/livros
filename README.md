@@ -2,7 +2,7 @@
 
 Um catálogo aberto de livros em português, publicado em [guaka.github.io/livros](https://guaka.github.io/livros/).
 
-O catálogo contém uma coleção inicial revista de 40 livros e ligações para seis fontes públicas: Biblioteca Nacional Digital, Project Gutenberg, Wikisource em português, Internet Archive, Europeana e Iberian Books.
+O catálogo contém uma coleção inicial revista de 45 livros, incluindo Fernando Pessoa e os heterónimos Alberto Caeiro, Álvaro de Campos, Ricardo Reis e Bernardo Soares, e ligações para seis fontes públicas: Biblioteca Nacional Digital, Project Gutenberg, Wikisource em português, Internet Archive, Europeana e Iberian Books.
 
 ## Direitos e leitura
 
