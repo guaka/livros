@@ -17,6 +17,14 @@ export function filterBooks(books, { query = '', source = '', rights = '' } = {}
   });
 }
 
+export function sortBooks(books, { key = 'title', direction = 'asc' } = {}) {
+  const factor = direction === 'desc' ? -1 : 1;
+  const valueFor = book => key === 'source' ? (sourceById(book.source)?.name || book.source) : book[key] || '';
+  return [...books].sort((left, right) => String(valueFor(left)).localeCompare(String(valueFor(right)), 'pt', {
+    numeric: key === 'year', sensitivity: 'base',
+  }) * factor);
+}
+
 export function validateCatalogue(books, sources = SOURCES) {
   const sourceIds = new Set(sources.map(source => source.id));
   const ids = new Set();

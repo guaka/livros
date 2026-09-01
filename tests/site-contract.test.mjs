@@ -10,6 +10,9 @@ test('the public page exposes search, source navigation, and reader controls', a
   assert.match(html, /id="query"/);
   assert.match(html, /id="source-filter"/);
   assert.match(html, /id="rights-filter"/);
+  assert.match(app, /<table>/);
+  assert.match(app, /data-sort=/);
+  assert.match(app, /aria-sort=/);
   assert.match(app, /data-reader-link/);
   assert.match(app, /target="_blank"/);
 });
