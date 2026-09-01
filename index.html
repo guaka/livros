@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livros Livres Portugueses: catálogo aberto de livros em português.">
+    <title>Livros Livres Portugueses</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <a class="wordmark" href="#top">livros</a>
+      <div><p class="eyebrow">Catálogo aberto</p><h1>Livros Livres<br>Portugueses</h1><p class="lede">Livros em português para descobrir, descarregar e ler. Os direitos são mostrados como cada fonte os publica.</p></div>
+      <a class="hero-link" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a>
+    </header>
+    <main>
+      <section class="section" aria-labelledby="fontes-title">
+        <div class="section-heading"><p class="eyebrow">Seis portas de entrada</p><h2 id="fontes-title">Fontes</h2></div>
+        <div id="sources" class="sources"></div>
+      </section>
+      <section class="section catalogue" id="catalogo" aria-labelledby="catalogue-title">
+        <div class="section-heading"><p class="eyebrow">Coleção inicial</p><h2 id="catalogue-title">Escolha um livro</h2></div>
+        <div class="filters">
+          <label><span>Pesquisar</span><input id="query" type="search" placeholder="Título ou autor"></label>
+          <label><span>Fonte</span><select id="source-filter"><option value="">Todas as fontes</option></select></label>
+          <label><span>Direitos</span><select id="rights-filter"><option value="">Todos os estados</option><option value="stated">Indicados pela fonte</option><option value="unknown">Não indicados pela fonte</option></select></label>
+        </div>
+        <p id="catalogue-count" class="count" aria-live="polite"></p>
+        <div id="books" class="books"></div>
+      </section>
+    </main>
+    <footer>Um projeto aberto. <a href="https://github.com/guaka/livros">Código e dados no GitHub</a>.</footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
